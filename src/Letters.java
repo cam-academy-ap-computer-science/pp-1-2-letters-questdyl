@@ -1,11 +1,10 @@
-
 public class Letters {
 
 	public static void main(String[] args) {
 		// The House That Jack Built
 		System.out.println("This is the house that Jack built.");
 		System.out.println("\nThis is the malt");
-		System.out.println("That lay in the house that Jack built.");
+		house();
 		System.out.println("\nThis is the rat,");
 		malt();
 		System.out.println("\nThis is the cat,");
@@ -17,9 +16,12 @@ public class Letters {
 		System.out.println("\nThis is the maiden all forlorn");
 		cow();
 	}
+	public static void house() {
+		System.out.println("That lay in the house that Jack built.");
+	}
 	public static void malt() {
 		System.out.println("That ate the malt");
-		System.out.println("That lay in the house that Jack built.");
+		house();
 	}
 	public static void rat() {
 		System.out.println("That killed the rat,");
